@@ -76,3 +76,41 @@ console.log(typeof bigNumber)
 
 
 //javascripts master krni hai to objects master kr lijiye or web events ya browser events kr lijiye  
+
+//**********************************MEMORY********************** */
+
+//earlier starting languages in C .... me memory ko reserve krna and memory ko free krna programmer ka kam hota tha ,coding likhne se phle sochna pdta tha ki kha pr memory space denge kitta memory space denge ,
+// or is se bi purani language jese assembly hogi wha to or difficult tha , lekin aaj ki modern language jese javascript ya mid modern language wha pr memory ka itta control nhi dia jata ... yha automatic garbage collection hoti hai 
+
+
+//memories are of two type STACK and HEAP
+// primitive me stack use hoti hai(jb stack memory use hoti hai to us ki hume ek copy milti hai)
+//heap non primitive me hoti hai (yha  se hume refrence milta hai ,jo bhi chnage hoga vo orignal value me hoga)
+
+
+let myYoutubename = "sagarbhandari.com"
+
+ let anotherName = myYoutubename 
+  
+ anotherName = "chai or code"
+console.log(myYoutubename);
+console.log(anotherName); 
+// yha hume copy mili value ki or jo change hua vo copy me hua 
+
+let userOne = {
+    email : "abc@gmail.com",
+    upi : "user@rbl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "xyz@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+//yha pr direct refrence mila , or change sidha value hui
+
+
+
+
