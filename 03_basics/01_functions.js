@@ -66,5 +66,67 @@ loginUserMessage( "sagar bhandari")
  console.log(loginUserMessage2(""));
  
  
+//aage ja k hum projects bnaigenge ..us projects me aksar ek shopping cart hoti hai ,,,to us shopping cart me user add kiye hi jata hai  saman..to hume pta ni kitte numbers ya kitte items ane wale hoti hai ..hume sirf price add krni hoti hai 
+//esi situation bhot common hai jb humko pta nhi ki kitte arguments ane wale hai ..to hume us hisab se parameters tyar krne hote hai 
+
+//rest operator and spread operator are same (...)(isi ko rest bola jata hai or iski ko spread /bus use case pr depend kia jata hai ki kb rest bolenge or kb spread )
+//jb kitti bi values aa skti hai to hum REST operator use krte hai
+
+
+function calculateCardPrice(...num1) {
+    //mujhe kya krna hai ki ho bi parameter ara usko return krna hai 
+    return num1
+}
+
+console.log(calculateCardPrice(200,500 ,1000 , 300)); //rest ka mtlb hai ..yh hume khule me milra hai isko ek bundle me pack kro or mujhe dedo
+// ab mujhe ek array me sara data mil jaiga  ...aage ja k array me loop lga k add kr dunga 
+
+//sometimes people also declare like this yh interview me puxa jata hai
+
+function caculateCardPrice2( val1 , val2 , ...num2) {
+    return num2 
+    
+}
+
+console.log(caculateCardPrice2(200,500,4000,3000,5000));//phle do values val1 or val2 me jaingi
+
+//hume objects bi pta hone chiye 
+const user ={
+    username3 : "sagar",
+    price : 199,
+}
+//ab is object ko function me kese pass kia jata hai or kese use kia jata hai 
+
+function handleObject(anyobject){//with anyobject taki chije generic/global rahe and  i can access any object
+ console.log(`username is ${anyobject.username3} and price is ${anyobject.price}`);
+ 
+
+}
+
+handleObject(user)//function ko call krenge or fir compulsory object hi passs krna hai yha pr jese user kia 
+//is trah k method me object me typesafety handle krni pdti hai 
+//typescript me yh type checking ho jati hai ...vese javascript me bi ho jati hai pr code zada likhna pdta hai ,,if else k through check krna pdega 
+
+//zaruri nhi tha ki hum vo object us trah se bna kr pass kre ..\
+//another way
+//yha hum direct object hi pass kr re hai 
+handleObject({
+    username3 : "sagar",
+    price : 599,
+})
+
+
+// is k andar bi array bi pass kr lete hai 
+
+const myNewArray = [ 200, 400 ,100 ,600]
+
+//ab ek function define krna hai jo array ko accept krta hai or uski second value ko return krta hai
+
+function returnSecondValue(getArray){
+    return getArray[1] //mynewarray k aage square brackets mt lagana kuki vo genereic naam hai vo kux bi array ho skta tha hume  sirf dhyn dena hai ki mere pr kya argument ara hai ..merpe get array ara hai 
+}
+
+console.log(returnSecondValue(myNewArray)); 
+
 
  
