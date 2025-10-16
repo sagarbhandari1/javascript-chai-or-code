@@ -2,7 +2,7 @@
 //primitive (they are call by value ,jb bi hum inhe khin se khi copy krte hai  inka orignal data ka refrence of memory nhi dia jata  ,mtlb isko copy kr k dia jata hai alg  ,or jo bhi changes hum krte hai vo copy me changes hote hai )
 
 //7 types : string ,number ,boolean ,null, undefined ,symbol ,BigInt
-
+// object is non primitive datatype
 
 //is javascript dynamically type language ya statically type language ?? 
 //when we have to tell the type of variable (type se saftey bd jati hai , pr javascript ,me iska koi use nhi )
