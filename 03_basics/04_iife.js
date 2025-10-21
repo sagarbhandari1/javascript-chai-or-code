@@ -25,7 +25,7 @@ chai();
 
 
 ( (name)=> {
-    //unammed iffe
+    //unammed iffe 
     console.log(`db connected two ${name}`);
     
 })("sagar")
