@@ -62,3 +62,5 @@ const temperature = 41
    console.log("user lgged in ");
    
  }
+
+ //truthy value and falsey value ..kux value hoti hai jinhe assume kr lia jata hai ki yh sahi hi hogi  ya fir yh glt hi hogi 
